@@ -1,0 +1,109 @@
+{
+  "name": "context-forge",
+  "version": "3.3.0",
+  "description": "AI orchestration platform with autonomous teams, enhancement planning, migration tools, 25+ slash commands, checkpoints & hooks. Multi-IDE: Claude, Cursor, Windsurf, Cline, Copilot",
+  "main": "dist/index.js",
+  "bin": {
+    "context-forge": "./bin/context-forge.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:unit": "jest --testPathPattern='(__tests__|test).*\\.(test|spec)\\.[jt]s$' --testPathIgnorePatterns='integration.test.ts|e2e.test.ts'",
+    "test:integration": "jest integration.test.ts",
+    "test:e2e": "jest e2e.test.ts",
+    "test:ci": "jest --ci --coverage --watchAll=false",
+    "test:services": "jest --testPathPattern='services.*test'",
+    "test:commands": "jest --testPathPattern='commands.*test'",
+    "test:prompts": "jest --testPathPattern='prompts.*test'",
+    "lint": "eslint . --ext .ts,.js",
+    "format": "prettier --write \"**/*.{js,ts,json,md}\"",
+    "prepublishOnly": "npm run build && npm run lint"
+  },
+  "keywords": [
+    "claude-code",
+    "claude-code-generator",
+    "ai-development-tools",
+    "context-engineering",
+    "migration-assistant",
+    "tech-stack-migration",
+    "human-in-the-loop",
+    "claude-hooks",
+    "slash-commands",
+    "ai-ide",
+    "project-scaffolding",
+    "ai-scaffolding",
+    "context-preservation",
+    "developer-productivity",
+    "anthropic",
+    "cursor-ide",
+    "windsurf",
+    "cline",
+    "github-copilot",
+    "gemini-cli",
+    "prp",
+    "product-requirement-prompt",
+    "validation-gates",
+    "ai-assisted-development",
+    "project-generator",
+    "one-pass-implementation",
+    "rollback-strategies",
+    "checkpoint-system",
+    "prompt-engineering",
+    "ai-configuration",
+    "developer-tools",
+    "automation",
+    "cli",
+    "context-forge"
+  ],
+  "author": "Jason Smith <webdevtodayjason@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/webdevtodayjason/context-forge#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webdevtodayjason/context-forge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/webdevtodayjason/context-forge/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=7.0.0"
+  },
+  "files": [
+    "dist/",
+    "bin/",
+    "templates/",
+    ".claude/docs/"
+  ],
+  "dependencies": {
+    "@anthropic-ai/claude-code": "^1.0.51",
+    "@anthropic-ai/sdk": "^0.56.0",
+    "@types/uuid": "^10.0.0",
+    "chalk": "^5.4.1",
+    "commander": "^14.0.0",
+    "fs-extra": "^11.3.0",
+    "handlebars": "^4.7.8",
+    "inquirer": "^12.7.0",
+    "ora": "^8.2.0",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^9.0.8",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.0.12",
+    "@typescript-eslint/eslint-plugin": "^8.36.0",
+    "@typescript-eslint/parser": "^8.36.0",
+    "eslint": "^9.30.1",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.5.1",
+    "jest": "^30.0.4",
+    "prettier": "^3.6.2",
+    "ts-jest": "^29.4.0",
+    "typescript": "^5.8.3"
+  }
+}
