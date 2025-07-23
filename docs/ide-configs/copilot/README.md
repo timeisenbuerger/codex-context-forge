@@ -503,7 +503,7 @@ Run these commands before proceeding:
 
 1. Generate the configuration:
    ```bash
-   context-forge init --ide copilot
+   codex-context-forge init --ide copilot
 ````
 
 2. Open project in VS Code with Copilot enabled

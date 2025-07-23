@@ -2,7 +2,7 @@
 
 ## Overview
 
-Context Forge now includes four powerful PRP templates designed for different development scenarios, each incorporating validation gates, comprehensive context, and implementation guidance for one-pass success.
+Codex Context Forge now includes four powerful PRP templates designed for different development scenarios, each incorporating validation gates, comprehensive context, and implementation guidance for one-pass success.
 
 ## Template Types
 
@@ -252,13 +252,13 @@ Step 1: [Title]
 
 ```bash
 # Interactive selection
-context-forge init
+codex-context-forge init
 
 # Specific template
-context-forge init --prp-template base-enhanced
+codex-context-forge init --prp-template base-enhanced
 
 # Multiple templates
-context-forge init --prp-template "planning,spec"
+codex-context-forge init --prp-template "planning,spec"
 ```
 
 ### Template Customization

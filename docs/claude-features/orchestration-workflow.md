@@ -1,15 +1,15 @@
-# Context Forge Orchestration Workflow
+# Codex Context Forge Orchestration Workflow
 
 ## Overview
 
-Context Forge orchestrates AI-assisted development through a sophisticated workflow that combines slash commands, PRP templates, validation gates, and automated execution. This document explains how all components work together to enable "one-pass implementation success."
+Codex Context Forge orchestrates AI-assisted development through a sophisticated workflow that combines slash commands, PRP templates, validation gates, and automated execution. This document explains how all components work together to enable "one-pass implementation success."
 
 ## The Complete Workflow
 
 ### 1. Project Initialization
 
 ```bash
-context-forge init
+codex-context-forge init
 ```
 
 This creates:
@@ -106,7 +106,7 @@ Step 2: Add endpoints ✓
 Executes entire workflow:
 
 ```bash
-context-forge run-prp authentication-prp
+codex-context-forge run-prp authentication-prp
 ```
 
 ## Orchestration Patterns
@@ -169,7 +169,7 @@ context-forge run-prp authentication-prp
 /parallel-prp-create "auth, user-management, permissions"
 
 # 2. Execute in sequence with shared context
-context-forge run-prp --batch "auth,user-management,permissions"
+codex-context-forge run-prp --batch "auth,user-management,permissions"
 
 # 3. Integration testing
 /test-integration complete user flow
@@ -469,13 +469,13 @@ orchestrator.on('complete', (result) => {
 #### Stuck Execution
 ```bash
 # Check status
-context-forge status
+codex-context-forge status
 
 # Force stop
-context-forge stop --force
+codex-context-forge stop --force
 
 # Resume
-context-forge run-prp --resume
+codex-context-forge run-prp --resume
 ```
 
 #### Context Drift
@@ -516,14 +516,14 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - name: Setup Context Forge
-        run: npm install -g context-forge
+      - name: Setup Codex Context Forge
+        run: npm install -g codex-context-forge
         
       - name: Execute Orchestration
         env:
           CLAUDE_API_KEY: ${{ secrets.CLAUDE_API_KEY }}
         run: |
-          context-forge orchestrate "${{ inputs.command }}"
+          codex-context-forge orchestrate "${{ inputs.command }}"
 ```
 
 ### VS Code Extension
@@ -538,8 +538,8 @@ vscode.commands.registerCommand('contextForge.orchestrate', async () => {
     '/implement-feature'
   ]);
   
-  const terminal = vscode.window.createTerminal('Context Forge');
-  terminal.sendText(`context-forge orchestrate "${command}"`);
+  const terminal = vscode.window.createTerminal('Codex Context Forge');
+  terminal.sendText(`codex-context-forge orchestrate "${command}"`);
 });
 ```
 
@@ -562,7 +562,7 @@ vscode.commands.registerCommand('contextForge.orchestrate', async () => {
 
 ## Conclusion
 
-Context Forge's orchestration brings together:
+Codex Context Forge's orchestration brings together:
 
 - **Slash Commands**: Structured AI interactions
 - **PRP Templates**: Comprehensive implementation guides

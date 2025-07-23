@@ -9,7 +9,7 @@ describe('End-to-End Tests', () => {
 
   beforeAll(async () => {
     // Ensure CLI is built
-    cliPath = path.join(process.cwd(), 'bin', 'context-forge.js');
+    cliPath = path.join(process.cwd(), 'bin', 'codex-context-forge.js');
 
     if (!(await fs.pathExists(cliPath))) {
       throw new Error('CLI not built. Run `npm run build` first.');
@@ -17,7 +17,7 @@ describe('End-to-End Tests', () => {
   });
 
   beforeEach(async () => {
-    tempDir = await fs.mkdtemp(path.join(tmpdir(), 'context-forge-e2e-'));
+    tempDir = await fs.mkdtemp(path.join(tmpdir(), 'codex-context-forge-e2e-'));
   });
 
   afterEach(async () => {
@@ -434,7 +434,7 @@ This is a test project for validation.
       await runCLIWithInput(['validate'], []);
 
       // Check that progress was persisted
-      const progressFile = path.join(tempDir, '.context-forge', 'progress.json');
+      const progressFile = path.join(tempDir, '.codex-context-forge', 'progress.json');
       if (await fs.pathExists(progressFile)) {
         const progress = await fs.readJson(progressFile);
         expect(progress).toHaveProperty('entries');
@@ -443,7 +443,7 @@ This is a test project for validation.
 
     it('should handle config file loading', async () => {
       // Create config file
-      const configDir = path.join(tempDir, '.context-forge');
+      const configDir = path.join(tempDir, '.codex-context-forge');
       await fs.ensureDir(configDir);
       await fs.writeJson(path.join(configDir, 'config.json'), {
         defaultIDE: 'claude',

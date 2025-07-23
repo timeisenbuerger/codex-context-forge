@@ -1,10 +1,10 @@
 {
-  "name": "context-forge",
+  "name": "codex-context-forge",
   "version": "3.3.0",
   "description": "AI orchestration platform with autonomous teams, enhancement planning, migration tools, 25+ slash commands, checkpoints & hooks. Multi-IDE: Claude, Cursor, Windsurf, Cline, Copilot",
   "main": "dist/index.js",
   "bin": {
-    "context-forge": "./bin/context-forge.js"
+    "codex-context-forge": "./bin/codex-context-forge.js"
   },
   "scripts": {
     "build": "tsc",
@@ -57,17 +57,17 @@
     "developer-tools",
     "automation",
     "cli",
-    "context-forge"
+    "codex-context-forge"
   ],
   "author": "Jason Smith <webdevtodayjason@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/webdevtodayjason/context-forge#readme",
+  "homepage": "https://github.com/webdevtodayjason/codex-context-forge#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/webdevtodayjason/context-forge.git"
+    "url": "git+https://github.com/webdevtodayjason/codex-context-forge.git"
   },
   "bugs": {
-    "url": "https://github.com/webdevtodayjason/context-forge/issues"
+    "url": "https://github.com/webdevtodayjason/codex-context-forge/issues"
   },
   "engines": {
     "node": ">=18.0.0",

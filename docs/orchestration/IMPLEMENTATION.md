@@ -161,13 +161,13 @@ The system includes comprehensive error handling:
 
 ```bash
 # Deploy orchestration for a project
-context-forge orchestrate medium
+codex-context-forge orchestrate medium
 
 # Monitor in real-time
 tmux attach -t cf-myproject
 
 # Check status via CLI
-context-forge orchestrate-status
+codex-context-forge orchestrate-status
 ```
 
 ## Best Practices
@@ -192,7 +192,7 @@ context-forge orchestrate-status
 Enable debug logging:
 
 ```bash
-DEBUG=orchestration:* context-forge orchestrate
+DEBUG=orchestration:* codex-context-forge orchestrate
 ```
 
 ## Conclusion

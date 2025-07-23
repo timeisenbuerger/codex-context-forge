@@ -1,8 +1,8 @@
-# Context Forge v3.2.0 Release Notes
+# Codex Context Forge v3.2.0 Release Notes
 
 ## 🚀 Major Release: Autonomous AI Orchestration
 
-We're thrilled to announce Context Forge v3.2.0, introducing groundbreaking **Autonomous AI Orchestration** capabilities that enable teams of AI agents to work on your projects 24/7 without human intervention.
+We're thrilled to announce Codex Context Forge v3.2.0, introducing groundbreaking **Autonomous AI Orchestration** capabilities that enable teams of AI agents to work on your projects 24/7 without human intervention.
 
 ### 🤖 What's New
 
@@ -16,7 +16,7 @@ Deploy self-managing AI agent teams that collaborate on your software projects:
 
 ##### 🎯 Orchestration Command
 ```bash
-context-forge orchestrate [small|medium|large]
+codex-context-forge orchestrate [small|medium|large]
 ```
 - Three-tier hierarchy: Orchestrator → Project Managers → Developers/QA/DevOps
 - Multiple deployment strategies: big-bang, phased, adaptive
@@ -80,23 +80,23 @@ context-forge orchestrate [small|medium|large]
 ### 💻 Installation
 
 ```bash
-npm install -g context-forge@3.2.0
+npm install -g codex-context-forge@3.2.0
 ```
 
 ### 🚀 Quick Start
 
 ```bash
 # Initialize your project
-context-forge init
+codex-context-forge init
 
 # Deploy a medium AI team
-context-forge orchestrate
+codex-context-forge orchestrate
 
 # Monitor your team
 tmux attach -t cf-yourproject
 
 # Check status
-context-forge orchestrate-status
+codex-context-forge orchestrate-status
 ```
 
 ### 📋 Prerequisites
@@ -118,7 +118,7 @@ context-forge orchestrate-status
 No breaking changes! Simply update and start using orchestration:
 
 ```bash
-npm update -g context-forge
+npm update -g codex-context-forge
 ```
 
 ### 🙏 Acknowledgments
@@ -127,9 +127,9 @@ Special thanks to our community for feedback and testing. The orchestration syst
 
 ### 📚 Resources
 
-- [Documentation](https://github.com/webdevtodayjason/context-forge#readme)
-- [Orchestration Tutorial](https://github.com/webdevtodayjason/context-forge/blob/main/docs/orchestration/tutorial.md)
-- [Issue Tracker](https://github.com/webdevtodayjason/context-forge/issues)
+- [Documentation](https://github.com/webdevtodayjason/codex-context-forge#readme)
+- [Orchestration Tutorial](https://github.com/webdevtodayjason/codex-context-forge/blob/main/docs/orchestration/tutorial.md)
+- [Issue Tracker](https://github.com/webdevtodayjason/codex-context-forge/issues)
 
 ### 🎯 What's Next
 

@@ -47,7 +47,7 @@ export class ProgressTracker {
   private currentEntry: ProgressEntry | null = null;
 
   constructor(projectPath: string = process.cwd()) {
-    this.progressFile = path.join(projectPath, '.context-forge', 'progress.json');
+    this.progressFile = path.join(projectPath, '.codex-context-forge', 'progress.json');
   }
 
   async startOperation(

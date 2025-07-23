@@ -122,11 +122,11 @@ describe('FileLogger', () => {
 
       await logger.writeLogFile();
 
-      const logPath = path.join(tempDir, 'context-forge.log');
+      const logPath = path.join(tempDir, 'codex-context-forge.log');
       expect(await fs.pathExists(logPath)).toBe(true);
 
       const logContent = await fs.readFile(logPath, 'utf-8');
-      expect(logContent).toContain('# Context Forge Generation Log');
+      expect(logContent).toContain('# Codex Context Forge Generation Log');
       expect(logContent).toContain('## Summary');
       expect(logContent).toContain('## File Operations');
       expect(logContent).toContain('CREATED: test.md');

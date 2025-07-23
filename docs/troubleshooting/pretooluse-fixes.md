@@ -200,7 +200,7 @@ export default function(toolName, args, context) {
 ### Enable Debug Logging
 ```bash
 export DEBUG=hooks:*,api:*,orchestration:*
-context-forge orchestrate
+codex-context-forge orchestrate
 ```
 
 ### Check Hook Status

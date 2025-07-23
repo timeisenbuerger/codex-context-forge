@@ -220,7 +220,7 @@ describe('Init Command', () => {
 
     it('should handle --preset option', async () => {
       // Create a preset file
-      const presetDir = path.join(tempDir, '.context-forge', 'presets');
+      const presetDir = path.join(tempDir, '.codex-context-forge', 'presets');
       await fs.ensureDir(presetDir);
       await fs.writeJson(path.join(presetDir, 'nextjs-fastapi.json'), {
         projectType: 'fullstack',

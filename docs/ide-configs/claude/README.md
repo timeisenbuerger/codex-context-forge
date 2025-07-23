@@ -142,23 +142,23 @@ project-root/
 
 ```bash
 # Comprehensive migration analysis
-context-forge migrate --analyze-only
+codex-context-forge migrate --analyze-only
 
 # Target-specific analysis
-context-forge migrate --target "React 18" --analyze-only
+codex-context-forge migrate --target "React 18" --analyze-only
 
 # Quick analysis
-context-forge migrate --quick --target "Next.js"
+codex-context-forge migrate --quick --target "Next.js"
 ```
 
 ### 2. Generate Migration Plan
 
 ```bash
 # Full migration with all artifacts
-context-forge migrate --target "React 18" --ide claude
+codex-context-forge migrate --target "React 18" --ide claude
 
 # Include checkpoints and hooks
-context-forge migrate --target "Vue 3" --ide claude --checkpoints --hooks
+codex-context-forge migrate --target "Vue 3" --ide claude --checkpoints --hooks
 ```
 
 ### 3. Use Slash Commands in Claude
@@ -336,7 +336,7 @@ Avoid building functionality on speculation.
 ### Validation Commands
 ```bash
 # Run full validation suite
-context-forge validate
+codex-context-forge validate
 
 # Migration-specific validation
 /migration-validate
@@ -479,7 +479,7 @@ Add package mappings to dependency analyzer:
 
 ```bash
 # Verbose migration analysis
-context-forge migrate --analyze-only --verbose
+codex-context-forge migrate --analyze-only --verbose
 
 # Debug framework detection
 /analyze-stack --debug
@@ -488,7 +488,7 @@ context-forge migrate --analyze-only --verbose
 python .claude/hooks/PreCompact.py
 
 # Validate configuration
-context-forge validate --migration
+codex-context-forge validate --migration
 ```
 
 ## Best Practices

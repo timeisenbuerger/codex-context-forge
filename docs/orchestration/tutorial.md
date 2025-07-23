@@ -22,7 +22,7 @@ Before starting, ensure you have:
 
 4. **Context Forge installed**: 
    ```bash
-   npm install -g context-forge
+   npm install -g codex-context-forge
    ```
 
 ## Step 1: Prepare Your Project
@@ -31,7 +31,7 @@ Before starting, ensure you have:
 
 ```bash
 cd your-project
-context-forge init
+codex-context-forge init
 ```
 
 ### Create PRPs for Your Features
@@ -53,7 +53,7 @@ Start with a small team to test the system:
 
 ```bash
 # Deploy a small team (1 PM, 2 developers)
-context-forge orchestrate small
+codex-context-forge orchestrate small
 ```
 
 ### What Happens Next
@@ -92,7 +92,7 @@ Use the slash command in Claude Code:
 Or via CLI:
 
 ```bash
-context-forge orchestrate-status
+codex-context-forge orchestrate-status
 ```
 
 ## Step 4: Manage Your Team
@@ -115,7 +115,7 @@ Agents commit every 30 minutes. Review their work:
 git log --oneline -20
 
 # Review specific agent's commits
-git log --author="orchestrator@context-forge.ai"
+git log --author="orchestrator@codex-context-forge.ai"
 ```
 
 ## Step 5: Feature-Focused Teams
@@ -124,10 +124,10 @@ For specific features, use targeted orchestration:
 
 ```bash
 # Deploy a team for authentication feature
-context-forge orchestrate-feature "user authentication"
+codex-context-forge orchestrate-feature "user authentication"
 
 # Deploy larger team for complex feature
-context-forge orchestrate-feature "payment integration" large
+codex-context-forge orchestrate-feature "payment integration" large
 ```
 
 ## Advanced Usage
@@ -197,13 +197,13 @@ Begin with a small team and scale up:
 
 ```bash
 # Day 1: Small team
-context-forge orchestrate small
+codex-context-forge orchestrate small
 
 # Day 3: Scale to medium
-context-forge orchestrate medium
+codex-context-forge orchestrate medium
 
 # Week 2: Full team if needed
-context-forge orchestrate large
+codex-context-forge orchestrate large
 ```
 
 ### 2. Clear Requirements
@@ -279,7 +279,7 @@ Here's a complete example of orchestrating a new feature:
 /prp-create user-notifications
 
 # 2. Deploy feature team
-context-forge orchestrate-feature "user notifications"
+codex-context-forge orchestrate-feature "user notifications"
 
 # 3. Monitor progress
 tmux attach -t cf-project

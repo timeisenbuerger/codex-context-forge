@@ -1,8 +1,8 @@
 import * as pkg from '../../package.json';
 
-describe('Context Forge', () => {
+describe('Codex Context Forge', () => {
   it('should have package.json', () => {
-    expect(pkg.name).toBe('context-forge');
+    expect(pkg.name).toBe('codex-context-forge');
     expect(pkg.version).toBeDefined();
   });
 

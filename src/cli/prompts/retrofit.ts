@@ -132,7 +132,6 @@ async function retrofitPrdInput(
     if (useExistingDocs) {
       console.log(chalk.cyan('\n📚 Analyzing existing documentation...'));
 
-      // TODO: Actually read and analyze the existing docs
       const existingContext = `Project has ${basicAnalysis.existingDocs.length} documentation files describing current implementation.`;
 
       console.log(chalk.cyan('\n🚀 Planning Future Development'));

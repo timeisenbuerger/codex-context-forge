@@ -158,7 +158,7 @@ export async function generateDocumentation(
   );
   console.log(
     chalk.gray(
-      `📄 Detailed log written to: ${path.relative(process.cwd(), path.join(outputPath, 'context-forge.log'))}`
+      `📄 Detailed log written to: ${path.relative(process.cwd(), path.join(outputPath, 'codex-context-forge.log'))}`
     )
   );
 }

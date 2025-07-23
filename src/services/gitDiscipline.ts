@@ -93,7 +93,7 @@ export class GitDisciplineService extends EventEmitter {
       await execAsync('git config user.name "Context Forge Orchestrator"', {
         cwd: this.projectPath,
       });
-      await execAsync('git config user.email "orchestrator@context-forge.ai"', {
+      await execAsync('git config user.email "orchestrator@codex-context-forge.ai"', {
         cwd: this.projectPath,
       });
     } catch {

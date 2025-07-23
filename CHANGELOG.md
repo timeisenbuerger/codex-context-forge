@@ -14,7 +14,7 @@ All notable changes to this project will be documented in this file.
 ### 📊 Transparent File Operations
 
 - **Accurate File Path Reporting**: Shows actual paths instead of misleading basenames
-- **Comprehensive Logging**: Generates detailed `context-forge.log` for all operations
+- **Comprehensive Logging**: Generates detailed `codex-context-forge.log` for all operations
 - **Operation Statistics**: Tracks created/updated/skipped/failed files
 - **FileLogger Service**: Centralized file operation tracking and logging
 
@@ -39,7 +39,7 @@ This release introduces groundbreaking autonomous AI orchestration capabilities,
 
 ### ✨ New Features
 
-- **🚀 Orchestration Command** (`context-forge orchestrate`):
+- **🚀 Orchestration Command** (`codex-context-forge orchestrate`):
   - Deploy autonomous AI agent teams in small, medium, or large configurations
   - Three-tier hierarchy: Orchestrator → Project Managers → Developers/QA/DevOps
   - Multiple deployment strategies: big-bang, phased, adaptive
@@ -134,7 +134,7 @@ This release introduces the powerful `enhance` command for systematic feature pl
 
 ### ✨ New Features
 
-- **📈 Enhancement Command** (`context-forge enhance`):
+- **📈 Enhancement Command** (`codex-context-forge enhance`):
   - Plan and implement new features for existing projects
   - Interactive feature definition with dependencies
   - Feasibility analysis with complexity scoring
@@ -190,7 +190,7 @@ This release introduces powerful new features for technology migration, human-in
 
 ### ✨ New Features
 
-- **🔄 Technology Migration Assistant** (`context-forge migrate`):
+- **🔄 Technology Migration Assistant** (`codex-context-forge migrate`):
   - Analyzes existing projects and complexity
   - Detects shared resources (databases, auth systems, APIs)
   - Generates phased migration plans with rollback strategies
@@ -243,7 +243,7 @@ This release introduces powerful new features for technology migration, human-in
 
 ### 🚀 Major Version Release
 
-This major version release solidifies Context Forge as the premier universal AI IDE configuration tool with comprehensive PRP support.
+This major version release solidifies Codex Context Forge as the premier universal AI IDE configuration tool with comprehensive PRP support.
 
 ### ✨ Highlights
 
@@ -326,7 +326,7 @@ This release adds comprehensive Product Requirement Prompt (PRP) support across 
 
 ### 🎉 Major Release: Multi-IDE Support
 
-This release transforms Context Forge from a Claude Code-specific tool into a universal AI IDE configuration generator, supporting 7+ major AI coding assistants.
+This release transforms Codex Context Forge from a Claude Code-specific tool into a universal AI IDE configuration generator, supporting 7+ major AI coding assistants.
 
 ### ✨ Features
 
@@ -370,7 +370,7 @@ This release transforms Context Forge from a Claude Code-specific tool into a un
 
 ### Initial Release
 
-- Basic Context Forge CLI functionality
+- Basic Codex Context Forge CLI functionality
 - Support for Claude Code configuration generation
 - Interactive project setup wizard
 - PRP (Product Requirement Prompt) integration
@@ -381,8 +381,8 @@ This release transforms Context Forge from a Claude Code-specific tool into a un
 
 ### Features
 
-- `context-forge init` command for project initialization
-- `context-forge validate` command for code validation
+- `codex-context-forge init` command for project initialization
+- `codex-context-forge validate` command for code validation
 - Multiple tech stack support (Next.js, React, FastAPI, Express, etc.)
 - Staged implementation plans
 - Bug tracking templates

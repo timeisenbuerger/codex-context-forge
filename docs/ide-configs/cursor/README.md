@@ -247,7 +247,7 @@ alwaysApply: true
 1. Generate the configuration:
 
    ```bash
-   context-forge init --ide cursor
+   codex-context-forge init --ide cursor
    ```
 
 2. Open your project in Cursor IDE

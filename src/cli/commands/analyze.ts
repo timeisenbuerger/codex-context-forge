@@ -105,7 +105,7 @@ export const analyzeCommand = new Command('analyze')
         // API Configuration
         if (apiConfig) {
           console.log(chalk.cyan('🔑 API Configuration:'));
-          console.log(`   • API key stored in: ${chalk.green('.context-forge-api')}`);
+          console.log(`   • API key stored in: ${chalk.green('.codex-context-forge-api')}`);
           console.log(`   • Provider: ${chalk.green(apiConfig.provider)}`);
           console.log(`   • Added to .gitignore: ${chalk.green('✓')}\n`);
         }
@@ -162,7 +162,7 @@ Generated on: ${new Date().toLocaleString()}
 ${
   apiConfig
     ? `- **Provider**: ${apiConfig.provider}
-- **Key Location**: .context-forge-api
+- **Key Location**: .codex-context-forge-api
 - **Added to .gitignore**: ✓`
     : 'No API configuration used'
 }

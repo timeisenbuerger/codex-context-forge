@@ -11,14 +11,14 @@ describe('Integration Tests', () => {
     // Build the CLI
     try {
       execSync('npm run build', { cwd: process.cwd(), stdio: 'inherit' });
-      cliPath = path.join(process.cwd(), 'bin', 'context-forge.js');
+      cliPath = path.join(process.cwd(), 'bin', 'codex-context-forge.js');
     } catch {
       throw new Error('Failed to build CLI for integration tests');
     }
   });
 
   beforeEach(async () => {
-    tempDir = await fs.mkdtemp(path.join(tmpdir(), 'context-forge-integration-'));
+    tempDir = await fs.mkdtemp(path.join(tmpdir(), 'codex-context-forge-integration-'));
   });
 
   afterEach(async () => {
@@ -268,7 +268,7 @@ describe('Integration Tests', () => {
         env: {
           ...process.env,
           CONTEXT_FORGE_DISABLE_AI: 'true',
-          DEBUG: 'context-forge*',
+          DEBUG: 'codex-context-forge*',
         },
       });
 
@@ -277,7 +277,7 @@ describe('Integration Tests', () => {
 
     it('should handle config file loading', async () => {
       // Create config file
-      const configDir = path.join(tempDir, '.context-forge');
+      const configDir = path.join(tempDir, '.codex-context-forge');
       await fs.ensureDir(configDir);
       await fs.writeJson(path.join(configDir, 'config.json'), {
         defaultIDE: 'claude',
@@ -302,7 +302,7 @@ describe('Integration Tests', () => {
         stdio: 'pipe',
       });
 
-      const progressDir = path.join(tempDir, '.context-forge');
+      const progressDir = path.join(tempDir, '.codex-context-forge');
       expect(await fs.pathExists(progressDir)).toBe(true);
     });
 
@@ -311,7 +311,7 @@ describe('Integration Tests', () => {
       execSync(`node ${cliPath} dashboard`, { cwd: tempDir, stdio: 'pipe' });
       execSync(`node ${cliPath} validate`, { cwd: tempDir, stdio: 'pipe' });
 
-      const progressFile = path.join(tempDir, '.context-forge', 'progress.json');
+      const progressFile = path.join(tempDir, '.codex-context-forge', 'progress.json');
       if (await fs.pathExists(progressFile)) {
         const progressData = await fs.readJson(progressFile);
         expect(progressData).toHaveProperty('entries');

@@ -71,7 +71,7 @@ The `test-orchestration.js` script performs:
 
 **Steps**:
 1. Create test project with git
-2. Run `context-forge orchestrate small`
+2. Run `codex-context-forge orchestrate small`
 3. Verify 3 agents deployed
 4. Check tmux windows created
 
@@ -242,7 +242,7 @@ tmux select-window -t cf-project:1
 tmux capture-pane -t cf-project:0 -p
 
 # Check orchestration status
-context-forge orchestrate-status
+codex-context-forge orchestrate-status
 ```
 
 ## Conclusion

@@ -10,7 +10,7 @@ describe('ProgressTracker', () => {
 
   beforeEach(async () => {
     tempDir = await fs.mkdtemp(path.join(tmpdir(), 'progress-test-'));
-    progressFile = path.join(tempDir, '.context-forge', 'progress.json');
+    progressFile = path.join(tempDir, '.codex-context-forge', 'progress.json');
 
     // Mock process.cwd to return our temp directory
     jest.spyOn(process, 'cwd').mockReturnValue(tempDir);
@@ -178,7 +178,7 @@ describe('ProgressTracker', () => {
       const operationId = await newTracker.startOperation('test', 'Test operation');
 
       expect(operationId).toBeDefined();
-      expect(await fs.pathExists(path.join(nonExistentDir, '.context-forge'))).toBe(true);
+      expect(await fs.pathExists(path.join(nonExistentDir, '.codex-context-forge'))).toBe(true);
     });
 
     it('should handle corrupted progress file', async () => {

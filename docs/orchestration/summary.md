@@ -42,7 +42,7 @@ The Context Forge orchestration system has been successfully implemented, tested
 
 ```bash
 # Deploy teams
-context-forge orchestrate [small|medium|large]
+codex-context-forge orchestrate [small|medium|large]
 
 # Options
 -s, --strategy [big-bang|phased|adaptive]

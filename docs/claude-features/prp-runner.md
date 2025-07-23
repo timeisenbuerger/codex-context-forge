@@ -6,10 +6,10 @@ The PRP Runner is a powerful CLI tool that executes Product Requirement Prompts 
 
 ## Installation & Setup
 
-The PRP Runner is included when you install Context Forge:
+The PRP Runner is included when you install Codex Context Forge:
 
 ```bash
-npm install -g context-forge
+npm install -g codex-context-forge
 ```
 
 ## Basic Usage
@@ -17,7 +17,7 @@ npm install -g context-forge
 ### Interactive Mode (Default)
 
 ```bash
-context-forge run-prp [prp-name]
+codex-context-forge run-prp [prp-name]
 ```
 
 This launches an interactive session where you can:
@@ -29,7 +29,7 @@ This launches an interactive session where you can:
 ### Headless Mode
 
 ```bash
-context-forge run-prp authentication-prp --no-interactive
+codex-context-forge run-prp authentication-prp --no-interactive
 ```
 
 Runs without user interaction, perfect for:
@@ -41,13 +41,13 @@ Runs without user interaction, perfect for:
 
 ```bash
 # Human-readable text (default)
-context-forge run-prp feature-prp
+codex-context-forge run-prp feature-prp
 
 # JSON output for parsing
-context-forge run-prp feature-prp -o json
+codex-context-forge run-prp feature-prp -o json
 
 # Streaming JSON for real-time processing
-context-forge run-prp feature-prp -o stream-json
+codex-context-forge run-prp feature-prp -o stream-json
 ```
 
 ## Configuration
@@ -200,7 +200,7 @@ npm run security:scan
 Execute multiple PRPs simultaneously:
 
 ```bash
-context-forge run-prp "auth-prp,user-prp,profile-prp" --parallel
+codex-context-forge run-prp "auth-prp,user-prp,profile-prp" --parallel
 ```
 
 ### Conditional Execution
@@ -246,10 +246,10 @@ Resume from failure point:
 
 ```bash
 # First run fails at step 3
-context-forge run-prp feature-prp
+codex-context-forge run-prp feature-prp
 
 # Resume from step 3
-context-forge run-prp feature-prp --resume
+codex-context-forge run-prp feature-prp --resume
 ```
 
 ### Dry Run Mode
@@ -257,7 +257,7 @@ context-forge run-prp feature-prp --resume
 Preview without execution:
 
 ```bash
-context-forge run-prp feature-prp --dry-run
+codex-context-forge run-prp feature-prp --dry-run
 ```
 
 Shows:
@@ -289,15 +289,15 @@ jobs:
         with:
           node-version: '18'
       
-      - name: Install Context Forge
-        run: npm install -g context-forge
+      - name: Install Codex Context Forge
+        run: npm install -g codex-context-forge
       
       - name: Execute PRP
         env:
           CLAUDE_API_KEY: ${{ secrets.CLAUDE_API_KEY }}
         run: |
           PRP_NAME=$(echo "${{ github.event.comment.body }}" | sed 's/\/execute-prp //')
-          context-forge run-prp "$PRP_NAME" --no-interactive -o json > result.json
+          codex-context-forge run-prp "$PRP_NAME" --no-interactive -o json > result.json
       
       - name: Comment Results
         uses: actions/github-script@v6
@@ -324,7 +324,7 @@ jobs:
 CHANGED_FILES=$(git diff --cached --name-only)
 if echo "$CHANGED_FILES" | grep -q "PRPs/"; then
   echo "Validating PRP..."
-  context-forge run-prp --validate-only
+  codex-context-forge run-prp --validate-only
 fi
 ```
 
@@ -338,7 +338,7 @@ fi
     {
       "label": "Execute Current PRP",
       "type": "shell",
-      "command": "context-forge",
+      "command": "codex-context-forge",
       "args": [
         "run-prp",
         "${fileBasenameNoExtension}",
@@ -397,7 +397,7 @@ Solution: Review test output, fix issues, use --resume
 3. **Rollback Support**
    ```bash
    # Rollback last PRP execution
-   context-forge run-prp --rollback
+   codex-context-forge run-prp --rollback
    ```
 
 ## Performance Optimization
@@ -408,10 +408,10 @@ Monitor and optimize token consumption:
 
 ```bash
 # Show token estimate before running
-context-forge run-prp feature-prp --estimate-tokens
+codex-context-forge run-prp feature-prp --estimate-tokens
 
 # Set token limit
-context-forge run-prp feature-prp --max-tokens 4000
+codex-context-forge run-prp feature-prp --max-tokens 4000
 ```
 
 ### Caching
@@ -434,10 +434,10 @@ Process multiple PRPs efficiently:
 
 ```bash
 # Sequential with shared context
-context-forge run-prp --batch "auth,user,profile"
+codex-context-forge run-prp --batch "auth,user,profile"
 
 # Parallel execution
-context-forge run-prp --batch "auth,user,profile" --parallel --max-concurrent 3
+codex-context-forge run-prp --batch "auth,user,profile" --parallel --max-concurrent 3
 ```
 
 ## Monitoring & Observability
@@ -446,13 +446,13 @@ context-forge run-prp --batch "auth,user,profile" --parallel --max-concurrent 3
 
 ```bash
 # Verbose logging
-context-forge run-prp feature-prp --verbose
+codex-context-forge run-prp feature-prp --verbose
 
 # Save logs
-context-forge run-prp feature-prp --log-file execution.log
+codex-context-forge run-prp feature-prp --log-file execution.log
 
 # Real-time streaming
-context-forge run-prp feature-prp --stream
+codex-context-forge run-prp feature-prp --stream
 ```
 
 ### Metrics Collection
@@ -513,11 +513,11 @@ context-forge run-prp feature-prp --stream
 
 ```bash
 # Create PRP
-context-forge init --prp-only
+codex-context-forge init --prp-only
 # Edit PRPs/user-profile-prp.md
 
 # Execute
-context-forge run-prp user-profile
+codex-context-forge run-prp user-profile
 
 # Output:
 ✓ Loading PRP: user-profile-prp.md
@@ -542,7 +542,7 @@ Coverage: 94%
 
 ```bash
 # Batch execution with dependencies
-context-forge run-prp \
+codex-context-forge run-prp \
   --batch "auth-system,user-management,permissions,audit-log" \
   --parallel \
   --max-concurrent 2 \
@@ -554,13 +554,13 @@ context-forge run-prp \
 
 ```bash
 # Verbose mode with step-by-step execution
-context-forge run-prp payment-integration \
+codex-context-forge run-prp payment-integration \
   --verbose \
   --step-mode \
   --log-file debug.log
 
 # Resume from failure
-context-forge run-prp payment-integration --resume --from-step 3
+codex-context-forge run-prp payment-integration --resume --from-step 3
 ```
 
 ## Conclusion
@@ -573,4 +573,4 @@ The PRP Runner transforms PRPs from static documents into executable specificati
 - **Consistency**: Repeatable, high-quality results
 - **Integration**: Seamless CI/CD and workflow integration
 
-Combined with Context Forge's slash commands and enhanced templates, it provides a complete AI-assisted development platform.
+Combined with Codex Context Forge's slash commands and enhanced templates, it provides a complete AI-assisted development platform.

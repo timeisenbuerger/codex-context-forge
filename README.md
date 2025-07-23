@@ -1,19 +1,19 @@
 <div align="center">
 
-# 🛠️ Context Forge
+# 🛠️ Codex Context Forge
 
 **CLI tool for instant Claude Code project scaffolding with context engineering best practices**
 
-[![npm version](https://img.shields.io/npm/v/context-forge.svg)](https://www.npmjs.com/package/context-forge)
-[![npm downloads](https://img.shields.io/npm/dm/context-forge.svg)](https://www.npmjs.com/package/context-forge)
+[![npm version](https://img.shields.io/npm/v/codex-context-forge.svg)](https://www.npmjs.com/package/codex-context-forge)
+[![npm downloads](https://img.shields.io/npm/dm/codex-context-forge.svg)](https://www.npmjs.com/package/codex-context-forge)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue.svg)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
-[![GitHub release](https://img.shields.io/github/release/webdevtodayjason/context-forge.svg)](https://github.com/webdevtodayjason/context-forge/releases)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/webdevtodayjason/context-forge/pulls)
-[![Made with ❤️](https://img.shields.io/badge/Made%20with-❤️-red.svg)](https://github.com/webdevtodayjason/context-forge)
+[![GitHub release](https://img.shields.io/github/release/webdevtodayjason/codex-context-forge.svg)](https://github.com/webdevtodayjason/codex-context-forge/releases)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/webdevtodayjason/codex-context-forge/pulls)
+[![Made with ❤️](https://img.shields.io/badge/Made%20with-❤️-red.svg)](https://github.com/webdevtodayjason/codex-context-forge)
 
-![Context Forge Banner](./img/context-forge-banner.png)
+![Codex Context Forge Banner](./img/codex-context-forge-banner.png)
 
 <p align="center">
   <strong>Transform your project ideas into AI-ready applications with intelligent context engineering</strong>
@@ -31,7 +31,7 @@
     <tr>
       <td align="center" width="50%">
         <h3>🤖 Autonomous AI Orchestration</h3>
-        <p><strong>NEW: <code>context-forge orchestrate</code></strong></p>
+        <p><strong>NEW: <code>codex-context-forge orchestrate</code></strong></p>
         <p>Deploy teams of AI agents working 24/7!</p>
         <ul align="left">
           <li>🚀 Autonomous AI team management</li>
@@ -40,11 +40,11 @@
           <li>⏰ Self-scheduling & planning</li>
           <li>📊 Progress tracking & monitoring</li>
         </ul>
-        <code>context-forge orchestrate --team-size medium</code>
+        <code>codex-context-forge orchestrate --team-size medium</code>
       </td>
       <td align="center" width="50%">
         <h3>🎯 Enhancement Planning System</h3>
-        <p><strong>NEW: <code>context-forge enhance</code></strong></p>
+        <p><strong>NEW: <code>codex-context-forge enhance</code></strong></p>
         <p>Plan and implement features systematically!</p>
         <ul align="left">
           <li>🎯 Feature definition & analysis</li>
@@ -53,7 +53,7 @@
           <li>✅ Progress tracking commands</li>
           <li>🔍 Validation checkpoints</li>
         </ul>
-        <code>context-forge enhance --features auth,api</code>
+        <code>codex-context-forge enhance --features auth,api</code>
       </td>
     </tr>
   </table>
@@ -74,7 +74,7 @@
       </td>
       <td align="center" width="50%">
         <h4>🪝 7 Claude Code Hooks</h4>
-        <p><code>context-forge copy-hooks</code></p>
+        <p><code>codex-context-forge copy-hooks</code></p>
         <ul align="left">
           <li><strong>PreCompact:</strong> Preserve context</li>
           <li><strong>ContextRotation:</strong> Smart file switching</li>
@@ -145,9 +145,9 @@
 
 ## 🌟 Overview
 
-Context Forge is a powerful CLI tool that bridges the gap between project requirements and AI-assisted development. By implementing Andre Karpathy's context engineering principles, it generates comprehensive documentation structures that enable AI IDEs to understand and build your project efficiently—without hallucinations or context confusion.
+Codex Context Forge is a powerful CLI tool that bridges the gap between project requirements and AI-assisted development. By implementing Andre Karpathy's context engineering principles, it generates comprehensive documentation structures that enable AI IDEs to understand and build your project efficiently—without hallucinations or context confusion.
 
-### 🚀 Why Choose Context Forge?
+### 🚀 Why Choose Codex Context Forge?
 
 **🌐 Universal AI IDE Support** - Works with ALL major AI coding assistants  
 **⚡ Zero Configuration** - Intelligent defaults for each IDE  
@@ -225,7 +225,7 @@ Need help understanding how each IDE uses its configuration? Check out our detai
 
 ## 🔗 Claude Hooks Manager Integration
 
-Context Forge provides deep integration with [Claude Hooks Manager](https://github.com/webdevtodayjason/claude-hooks) through 4 powerful hooks that enhance your development workflow and maintain context throughout long sessions.
+Codex Context Forge provides deep integration with [Claude Hooks Manager](https://github.com/webdevtodayjason/claude-hooks) through 4 powerful hooks that enhance your development workflow and maintain context throughout long sessions.
 
 ### The 4 Claude Code Hooks
 
@@ -257,7 +257,7 @@ Tracks PRP implementation progress:
 
 ### 🎯 NEW: Dart Integration Hooks (v3.2.1)
 
-When **Dart task management** is enabled, Context Forge generates additional hooks for comprehensive task tracking:
+When **Dart task management** is enabled, Codex Context Forge generates additional hooks for comprehensive task tracking:
 
 #### 5. **DartProgressUpdater Hook** - Automatic Task Progress
 Automatically updates Dart task progress based on code changes:
@@ -282,7 +282,7 @@ Maintains smart mapping between Dart tasks and code files:
 
 **Enable Dart Integration:**
 ```bash
-context-forge init
+codex-context-forge init
 # Select "Enable Dart task integration? Yes"
 ```
 
@@ -296,10 +296,10 @@ context-forge init
 
 ```bash
 # Generate project with hooks
-context-forge init  # Select "Enable Claude Code hooks? Yes"
+codex-context-forge init  # Select "Enable Claude Code hooks? Yes"
 
 # Or copy hooks from another project
-context-forge copy-hooks --source ../claude-hooks-repo/hooks
+codex-context-forge copy-hooks --source ../claude-hooks-repo/hooks
 
 # Hooks are created in:
 # .claude/hooks/
@@ -313,7 +313,7 @@ This integration is especially powerful for:
 
 ## 🛑 Human-in-the-Loop Checkpoints
 
-Context Forge introduces a powerful checkpoint system that pauses AI development at critical milestones for human verification, ensuring you maintain control over the implementation process.
+Codex Context Forge introduces a powerful checkpoint system that pauses AI development at critical milestones for human verification, ensuring you maintain control over the implementation process.
 
 ### Why Checkpoints?
 
@@ -367,7 +367,7 @@ Please respond:
 Checkpoints are configured during project initialization or can be added to existing projects:
 
 ```yaml
-# .context-forge/checkpoints.yaml
+# .codex-context-forge/checkpoints.yaml
 checkpoints:
   - name: "Database Migration"
     phase: "infrastructure"
@@ -381,10 +381,10 @@ checkpoints:
 ## 📦 Installation
 
 ```bash
-npm install -g context-forge
+npm install -g codex-context-forge
 ```
 
-[![npm](https://nodei.co/npm/context-forge.png)](https://npmjs.org/package/context-forge)
+[![npm](https://nodei.co/npm/codex-context-forge.png)](https://npmjs.org/package/codex-context-forge)
 
 ## 🚀 Quick Start
 
@@ -398,41 +398,41 @@ npm install -g context-forge
 
 ```bash
 # Initialize a new project
-context-forge init
+codex-context-forge init
 
 # Or use npx without installation
-npx context-forge init
+npx codex-context-forge init
 ```
 
-**Note**: Context Forge is a CLI tool and should be installed globally. Do not install it as a project dependency with `npm install context-forge` as this will add unnecessary files to your project.
+**Note**: Codex Context Forge is a CLI tool and should be installed globally. Do not install it as a project dependency with `npm install codex-context-forge` as this will add unnecessary files to your project.
 
 ```bash
 # Initialize in current directory
-context-forge init
+codex-context-forge init
 
 # Specify output directory
-context-forge init --output ./my-project
+codex-context-forge init --output ./my-project
 
 # Use with existing PRD file
-context-forge init --prd ./requirements.md
+codex-context-forge init --prd ./requirements.md
 
 # Skip interactive prompts with config
-context-forge init --config ./context-forge.json
+codex-context-forge init --config ./codex-context-forge.json
 
 # Run validation on existing project
-context-forge validate
+codex-context-forge validate
 
 # Retrofit existing projects with AI-optimized documentation
-context-forge analyze
+codex-context-forge analyze
 
 # Execute PRPs with Claude Code for one-pass implementation
-context-forge run-prp feature-name
+codex-context-forge run-prp feature-name
 
 # NEW: Plan technology migration
-context-forge migrate --target "Next.js"
+codex-context-forge migrate --target "Next.js"
 
 # NEW: Copy Claude Code hooks from another project
-context-forge copy-hooks --source ../claude-hooks-repo/hooks
+codex-context-forge copy-hooks --source ../claude-hooks-repo/hooks
 ```
 
 ## 💡 Usage Examples
@@ -440,7 +440,7 @@ context-forge copy-hooks --source ../claude-hooks-repo/hooks
 ### Example 1: SaaS Dashboard Project
 
 ```bash
-$ context-forge init
+$ codex-context-forge init
 
 ? Project name: Analytics Dashboard
 ? Project type: fullstack
@@ -466,7 +466,7 @@ Generated files:
 - PRPs/base.md (Implementation prompt with validation gates)
 - .claude/commands/ (20+ slash commands)
 - .claude/hooks/ (4 Claude Code hooks)
-- .context-forge/config.json
+- .codex-context-forge/config.json
 
 Next steps:
 1. cd analytics-dashboard
@@ -478,7 +478,7 @@ Next steps:
 ### Example 2: API-Only Microservice
 
 ```bash
-$ context-forge init --output user-service
+$ codex-context-forge init --output user-service
 
 ? Project name: User Service
 ? Project type: api
@@ -503,7 +503,7 @@ user-service/
 ### Example 3: Using Configuration File
 
 ```bash
-# context-forge.json
+# codex-context-forge.json
 {
   "projectName": "E-Commerce Platform",
   "projectType": "fullstack",
@@ -554,7 +554,7 @@ user-service/
 }
 
 # Run with config
-$ context-forge init --config context-forge.json --output ecommerce-platform
+$ codex-context-forge init --config codex-context-forge.json --output ecommerce-platform
 ```
 
 ## 🎯 Real-World Scenarios
@@ -565,7 +565,7 @@ You're building an MVP for a startup. You need to move fast but maintain quality
 
 ```bash
 # 1. Initialize with MVP timeline
-context-forge init --preset startup-mvp
+codex-context-forge init --preset startup-mvp
 
 # 2. Review generated Implementation.md
 cat Docs/Implementation.md
@@ -576,7 +576,7 @@ cat Docs/Implementation.md
 # Follow Stage 1 tasks systematically
 
 # 4. Validate progress daily
-context-forge validate --levels syntax,tests
+codex-context-forge validate --levels syntax,tests
 ```
 
 ### Scenario 2: Enterprise Migration
@@ -585,7 +585,7 @@ Migrating a legacy system to modern stack:
 
 ```bash
 # 1. Create detailed PRD first
-context-forge init --prd legacy-migration-prd.md
+codex-context-forge init --prd legacy-migration-prd.md
 
 # 2. Select enterprise options
 # - Choose 'enterprise' timeline
@@ -605,7 +605,7 @@ context-forge init --prd legacy-migration-prd.md
 
 ```bash
 # 1. Quick setup
-npx context-forge init --preset hackathon
+npx codex-context-forge init --preset hackathon
 
 # 2. Skip optional features
 # - Disable PRP (too detailed for hackathon)
@@ -638,16 +638,16 @@ npx context-forge init --preset hackathon
 ```bash
 # Run in your existing project directory
 cd /path/to/your/project
-context-forge analyze
+codex-context-forge analyze
 
 # Specify output directory
-context-forge analyze --output ./ai-docs
+codex-context-forge analyze --output ./ai-docs
 
 # Target specific IDEs
-context-forge analyze --ide claude,cursor
+codex-context-forge analyze --ide claude,cursor
 
 # Skip AI analysis for faster setup
-context-forge analyze --no-ai
+codex-context-forge analyze --no-ai
 ```
 
 ### Example Output
@@ -697,16 +697,16 @@ Perfect for:
 
 ```bash
 # Interactive migration planning
-context-forge migrate
+codex-context-forge migrate
 
 # Specify target technology
-context-forge migrate --target "Next.js"
+codex-context-forge migrate --target "Next.js"
 
 # Quick mode (skip detailed analysis)
-context-forge migrate --quick --target "FastAPI"
+codex-context-forge migrate --quick --target "FastAPI"
 
 # Analyze only (no file generation)
-context-forge migrate --analyze-only
+codex-context-forge migrate --analyze-only
 ```
 
 ### Example Migration Output
@@ -756,7 +756,7 @@ Recommended Strategy: parallel-run
 
 ### Generated Files Structure
 
-Context Forge creates IDE-specific documentation structures:
+Codex Context Forge creates IDE-specific documentation structures:
 
 #### Claude Code (Default)
 
@@ -881,7 +881,7 @@ Advanced prompts for complex implementations:
 
 ### Interactive Setup Flow
 
-When you run `context-forge init`, you'll be guided through:
+When you run `codex-context-forge init`, you'll be guided through:
 
 1. **Project Information** - Name, type, and description
 2. **PRD Input** - Provide or create product requirements
@@ -914,23 +914,23 @@ When you run `context-forge init`, you'll be guided through:
 
 ### Validation System
 
-Context Forge includes a powerful validation system that ensures code quality:
+Codex Context Forge includes a powerful validation system that ensures code quality:
 
 ```bash
 # Run all critical validations
-context-forge validate
+codex-context-forge validate
 
 # Run specific validation levels
-context-forge validate --levels syntax,tests
+codex-context-forge validate --levels syntax,tests
 
 # Run all validations including optional ones
-context-forge validate --all
+codex-context-forge validate --all
 
 # Generate detailed report
-context-forge validate --report
+codex-context-forge validate --report
 
 # Validate in specific directory
-context-forge validate --path ./my-project
+codex-context-forge validate --path ./my-project
 ```
 
 #### Validation Levels
@@ -991,7 +991,7 @@ Skip interactive prompts with a configuration file:
 }
 ```
 
-Use with: `context-forge init --config context-forge.json`
+Use with: `codex-context-forge init --config codex-context-forge.json`
 
 ## 🔄 Complete Workflow
 
@@ -999,10 +999,10 @@ Use with: `context-forge init --config context-forge.json`
 
 ```bash
 # Run the init command
-context-forge init
+codex-context-forge init
 
 # Answer the interactive prompts
-# Context Forge will analyze your requirements and generate appropriate documentation
+# Codex Context Forge will analyze your requirements and generate appropriate documentation
 ```
 
 ### Step 2: Review Generated Documentation
@@ -1032,13 +1032,13 @@ cat Docs/project_structure.md
 
 ```bash
 # After completing each stage
-context-forge validate
+codex-context-forge validate
 
 # Before committing code
-context-forge validate --levels syntax,tests
+codex-context-forge validate --levels syntax,tests
 
 # For comprehensive check
-context-forge validate --all --report
+codex-context-forge validate --all --report
 ```
 
 ### Step 5: Iterate and Improve
@@ -1051,19 +1051,19 @@ context-forge validate --all --report
 
 ### Custom Templates
 
-Create your own templates in `~/.context-forge/templates/`:
+Create your own templates in `~/.codex-context-forge/templates/`:
 
 ```bash
 # Custom tech stack template
-~/.context-forge/templates/claude/my-stack.md
+~/.codex-context-forge/templates/claude/my-stack.md
 
 # Custom validation commands
-~/.context-forge/templates/validation/my-validation.json
+~/.codex-context-forge/templates/validation/my-validation.json
 ```
 
 ### Hooks and Automation
 
-Add pre/post hooks in `.context-forge/hooks/`:
+Add pre/post hooks in `.codex-context-forge/hooks/`:
 
 ```bash
 # pre-init.sh - Run before initialization
@@ -1080,7 +1080,7 @@ npm install
 
 ```yaml
 # .github/workflows/validate.yml
-name: Context Forge Validation
+name: Codex Context Forge Validation
 on: [push, pull_request]
 
 jobs:
@@ -1089,16 +1089,16 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
-      - run: npm install -g context-forge
-      - run: context-forge validate --all
+      - run: npm install -g codex-context-forge
+      - run: codex-context-forge validate --all
 ```
 
 ## 🏗️ Development
 
 ```bash
 # Clone the repository
-git clone https://github.com/webdevtodayjason/context-forge.git
-cd context-forge
+git clone https://github.com/webdevtodayjason/codex-context-forge.git
+cd codex-context-forge
 
 # Install dependencies
 npm install
@@ -1119,7 +1119,7 @@ npm run lint
 ### Project Structure
 
 ```
-context-forge/
+codex-context-forge/
 ├── src/
 │   ├── cli/              # CLI entry point and commands
 │   ├── commands/         # Command implementations
@@ -1169,16 +1169,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Links
 
-- **Repository**: [github.com/webdevtodayjason/context-forge](https://github.com/webdevtodayjason/context-forge)
-- **npm Package**: [npmjs.com/package/context-forge](https://www.npmjs.com/package/context-forge)
-- **Issues**: [GitHub Issues](https://github.com/webdevtodayjason/context-forge/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/webdevtodayjason/context-forge/discussions)
+- **Repository**: [github.com/webdevtodayjason/codex-context-forge](https://github.com/webdevtodayjason/codex-context-forge)
+- **npm Package**: [npmjs.com/package/codex-context-forge](https://www.npmjs.com/package/codex-context-forge)
+- **Issues**: [GitHub Issues](https://github.com/webdevtodayjason/codex-context-forge/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/webdevtodayjason/codex-context-forge/discussions)
 
 ---
 
 <div align="center">
 
-**Made with ❤️ by the Context Forge community**
+**Made with ❤️ by the Codex Context Forge community**
 
 _Empowering developers to build smarter, not harder_
 
@@ -1187,7 +1187,7 @@ _Empowering developers to build smarter, not harder_
 ---
 
 <div align="center">
-  <img src="./img/context-forge-logo.png" alt="Context Forge Logo" height="60" />
+  <img src="./img/codex-context-forge-logo.png" alt="Codex Context Forge Logo" height="60" />
   &nbsp;&nbsp;&nbsp;&nbsp;
   <img src="./img/sem-logo.png" alt="SimFreak Logo" height="60" />
 </div>
@@ -1196,6 +1196,6 @@ _Empowering developers to build smarter, not harder_
 
 <div align="center">
   
-[![Star History Chart](https://api.star-history.com/svg?repos=webdevtodayjason/context-forge&type=Date)](https://star-history.com/#webdevtodayjason/context-forge&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=webdevtodayjason/codex-context-forge&type=Date)](https://star-history.com/#webdevtodayjason/codex-context-forge&Date)
 
 </div>

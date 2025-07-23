@@ -408,7 +408,7 @@ style: project_conventions
 1. Generate the configuration:
 
    ```bash
-   context-forge init --ide gemini
+   codex-context-forge init --ide gemini
    ```
 
 2. Use Gemini CLI:

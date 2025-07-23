@@ -1,8 +1,8 @@
-# Context Forge Claude Features Documentation
+# Codex Context Forge Claude Features Documentation
 
 ## Overview
 
-This directory contains comprehensive documentation for the advanced Claude Code features implemented in Context Forge v3.2.0+. These features transform Claude Code into a powerful AI development orchestrator, enabling "one-pass implementation success" through structured workflows, intelligent automation, and autonomous AI teams.
+This directory contains comprehensive documentation for the advanced Claude Code features implemented in Codex Context Forge v3.2.0+. These features transform Claude Code into a powerful AI development orchestrator, enabling "one-pass implementation success" through structured workflows, intelligent automation, and autonomous AI teams.
 
 ## Documentation Structure
 
@@ -38,8 +38,8 @@ This directory contains comprehensive documentation for the advanced Claude Code
 ### 1. Initialize Project
 
 ```bash
-npm install -g context-forge
-context-forge init
+npm install -g codex-context-forge
+codex-context-forge init
 ```
 
 ### 2. Use Slash Commands
@@ -54,7 +54,7 @@ In Claude Code:
 ### 3. Run PRPs Automatically
 
 ```bash
-context-forge run-prp authentication-prp
+codex-context-forge run-prp authentication-prp
 ```
 
 ## Key Concepts
@@ -110,7 +110,7 @@ Intelligent coordination of:
 
 ```bash
 # 1. Initialize and configure
-context-forge init
+codex-context-forge init
 
 # 2. In Claude Code
 /prime-context  # Activates architect mode for new projects
@@ -119,7 +119,7 @@ context-forge init
 /prp-execute payment-processing
 
 # 3. Automated execution
-context-forge run-prp payment-processing --headless
+codex-context-forge run-prp payment-processing --headless
 ```
 
 ### Bug Fix Workflow
@@ -144,7 +144,7 @@ context-forge run-prp payment-processing --headless
 ## Architecture
 
 ```
-Context Forge Enhanced
+Codex Context Forge Enhanced
 ├── Slash Command System
 │   ├── Command Parser
 │   ├── Context Manager
@@ -223,8 +223,8 @@ Context Forge Enhanced
 ### Getting Help
 
 1. Check documentation in this directory
-2. Run `context-forge --help`
-3. Visit [GitHub Issues](https://github.com/webdevtodayjason/context-forge/issues)
+2. Run `codex-context-forge --help`
+3. Visit [GitHub Issues](https://github.com/webdevtodayjason/codex-context-forge/issues)
 
 ## Future Roadmap
 
@@ -254,6 +254,6 @@ We welcome contributions! Areas of interest:
 
 ## Conclusion
 
-The Context Forge Claude features represent a paradigm shift in AI-assisted development. By combining structured commands, comprehensive templates, validation gates, and intelligent orchestration, we enable developers to achieve "one-pass implementation success" - moving from requirements to working, tested code in a single coherent workflow.
+The Codex Context Forge Claude features represent a paradigm shift in AI-assisted development. By combining structured commands, comprehensive templates, validation gates, and intelligent orchestration, we enable developers to achieve "one-pass implementation success" - moving from requirements to working, tested code in a single coherent workflow.
 
 Explore each documentation file to master these powerful features and transform your development workflow.

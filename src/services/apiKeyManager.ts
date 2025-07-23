@@ -14,7 +14,7 @@ export class ApiKeyManager {
   private gitignorePath: string;
 
   constructor(private projectPath: string) {
-    this.configPath = path.join(projectPath, '.context-forge-api');
+    this.configPath = path.join(projectPath, '.codex-context-forge-api');
     this.gitignorePath = path.join(projectPath, '.gitignore');
   }
 
@@ -79,7 +79,7 @@ export class ApiKeyManager {
     await this.updateGitignore();
 
     console.log(chalk.green('\n✅ API configuration saved securely'));
-    console.log(chalk.gray('• Config stored in .context-forge-api'));
+    console.log(chalk.gray('• Config stored in .codex-context-forge-api'));
     console.log(chalk.gray('• Added to .gitignore automatically\n'));
 
     return config;
@@ -104,7 +104,7 @@ export class ApiKeyManager {
   }
 
   private async updateGitignore(): Promise<void> {
-    const gitignoreEntry = '.context-forge-api';
+    const gitignoreEntry = '.codex-context-forge-api';
 
     try {
       let gitignoreContent = '';

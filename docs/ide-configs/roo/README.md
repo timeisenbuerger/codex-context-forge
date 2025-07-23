@@ -201,7 +201,7 @@ server/
 1. Generate the configuration:
 
    ```bash
-   context-forge init --ide roo
+   codex-context-forge init --ide roo
    ```
 
 2. Install Roo Code extension in VS Code

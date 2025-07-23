@@ -18,10 +18,10 @@ export const validateCommand = new Command('validate')
       console.log(chalk.bold.blue('🔍 Context Forge - Validation Runner\n'));
 
       // Check if project has been initialized
-      const configPath = path.join(options.path, '.context-forge', 'config.json');
+      const configPath = path.join(options.path, '.codex-context-forge', 'config.json');
       if (!(await fs.pathExists(configPath))) {
-        console.error(chalk.red('❌ No context-forge configuration found.'));
-        console.log(chalk.yellow('Run "context-forge init" first to initialize your project.'));
+        console.error(chalk.red('❌ No codex-context-forge configuration found.'));
+        console.log(chalk.yellow('Run "codex-context-forge init" first to initialize your project.'));
         process.exit(1);
       }
 

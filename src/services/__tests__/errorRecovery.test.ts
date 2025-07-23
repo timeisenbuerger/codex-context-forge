@@ -188,7 +188,7 @@ describe('ErrorRecoveryService', () => {
     });
 
     it('should handle configuration reset', async () => {
-      const configFile = path.join(tempDir, '.context-forge', 'config.json');
+      const configFile = path.join(tempDir, '.codex-context-forge', 'config.json');
       await fs.ensureDir(path.dirname(configFile));
       await fs.writeJson(configFile, { corrupted: 'data' });
 

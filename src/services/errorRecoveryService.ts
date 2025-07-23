@@ -252,7 +252,7 @@ export class ErrorRecoveryService {
 
       // Remove any cache or config files
       const configPaths = [
-        path.join(projectPath, '.context-forge'),
+        path.join(projectPath, '.codex-context-forge'),
         path.join(projectPath, 'node_modules/.cache'),
       ];
 
@@ -285,9 +285,9 @@ export class ErrorRecoveryService {
   private showAdditionalHelp(_error: Error, _context: ErrorContext): void {
     console.log(chalk.blue('💡 Additional resources:'));
     console.log(
-      chalk.gray('• Documentation: https://github.com/webdevtodayjason/context-forge#readme')
+      chalk.gray('• Documentation: https://github.com/webdevtodayjason/codex-context-forge#readme')
     );
-    console.log(chalk.gray('• Issues: https://github.com/webdevtodayjason/context-forge/issues'));
+    console.log(chalk.gray('• Issues: https://github.com/webdevtodayjason/codex-context-forge/issues'));
     console.log(chalk.gray('• Discord: Contact for community support'));
 
     if (this.aiService.isAIEnabled()) {

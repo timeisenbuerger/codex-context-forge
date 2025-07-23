@@ -1,4 +1,4 @@
-# Context-Forge Enhancement Summary
+# Codex-Context-Forge Enhancement Summary
 
 ## 🎯 **Problem Solved**
 The `/prime-context` command was generic and didn't provide actionable guidance for new projects, causing Claude to just analyze instead of building.
@@ -50,7 +50,7 @@ Fixed misleading output that showed files being created in root when they were a
 ```
 
 ### 5. **Comprehensive Logging**
-Every context-forge run now generates `context-forge.log` with:
+Every codex-context-forge run now generates `codex-context-forge.log` with:
 - Complete file paths and descriptions
 - Operation timestamps and statistics
 - Directory structure created
@@ -106,4 +106,4 @@ Every context-forge run now generates `context-forge.log` with:
 4. **Validate clean commits**: Verify no Claude Code signatures
 5. **Monitor file reporting**: Confirm accurate path display
 
-This enhancement transforms context-forge from a documentation tool into a proactive development companion that helps Claude build real applications from day one.
+This enhancement transforms codex-context-forge from a documentation tool into a proactive development companion that helps Claude build real applications from day one.

@@ -534,7 +534,7 @@ Run these commands before proceeding:
 1. Generate the configuration:
 
    ```bash
-   context-forge init --ide cline
+   codex-context-forge init --ide cline
    ```
 
 2. Install Cline extension in VS Code

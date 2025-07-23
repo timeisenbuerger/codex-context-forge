@@ -54,7 +54,7 @@ export const orchestrateCommand = new Command('orchestrate')
       if (!fs.existsSync(path.join(projectPath, 'CLAUDE.md'))) {
         spinner.warn('CLAUDE.md not found');
         console.log(chalk.yellow('\nCLAUDE.md provides important context for agents.'));
-        console.log(chalk.yellow('Consider running: context-forge init'));
+        console.log(chalk.yellow('Consider running: codex-context-forge init'));
       }
 
       spinner.succeed('Prerequisites checked');

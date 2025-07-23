@@ -2,7 +2,7 @@
 
 ## Overview
 
-Context Forge now generates a comprehensive set of slash commands for Claude Code, enabling powerful AI-assisted development workflows. These commands are stored in `.claude/commands/` and provide structured, repeatable patterns for common development tasks.
+Codex Context Forge now generates a comprehensive set of slash commands for Claude Code, enabling powerful AI-assisted development workflows. These commands are stored in `.claude/commands/` and provide structured, repeatable patterns for common development tasks.
 
 ## How Slash Commands Work
 
@@ -380,7 +380,7 @@ Slash commands work seamlessly with the PRP runner:
 
 1. Create PRP: `/prp-create feature-name`
 2. Review generated PRP
-3. Execute: `context-forge run-prp feature-name`
+3. Execute: `codex-context-forge run-prp feature-name`
 
 Or directly in Claude Code:
 1. `/prp-execute feature-name`

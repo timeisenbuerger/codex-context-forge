@@ -308,7 +308,7 @@ cascade:review "validate User Authentication implementation"
 1. Generate the configuration:
 
    ```bash
-   context-forge init --ide windsurf
+   codex-context-forge init --ide windsurf
    ```
 
 2. Open project in Windsurf IDE

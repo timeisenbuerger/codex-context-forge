@@ -60,7 +60,7 @@ export function generateValidationSummary(report: ValidationReport): string {
       });
   }
 
-  lines.push('\nRun "context-forge validate --report" for detailed report');
+  lines.push('\nRun "codex-context-forge validate --report" for detailed report');
 
   return lines.join('\n');
 }

@@ -1,8 +1,8 @@
-# Dart Integration - Context Forge
+# Dart Integration - Codex Context Forge
 
 ## Overview
 
-Context Forge v3.2.1 introduces comprehensive Dart task management integration through intelligent hooks that automatically track progress, document changes, and maintain task-file relationships throughout your development workflow.
+Codex Context Forge v3.2.1 introduces comprehensive Dart task management integration through intelligent hooks that automatically track progress, document changes, and maintain task-file relationships throughout your development workflow.
 
 ## Features
 
@@ -26,7 +26,7 @@ Context Forge v3.2.1 introduces comprehensive Dart task management integration t
 
 ## Generated Hooks
 
-When Dart integration is enabled, Context Forge generates three additional hooks:
+When Dart integration is enabled, Codex Context Forge generates three additional hooks:
 
 ### 1. DartProgressUpdater.py
 **Purpose**: Automatically updates task progress based on code changes and git commits
@@ -71,7 +71,7 @@ When Dart integration is enabled, Context Forge generates three additional hooks
 
 During project initialization:
 ```bash
-context-forge init
+codex-context-forge init
 ```
 
 Select "Yes" when prompted:
@@ -269,9 +269,9 @@ if inferred_task['confidence'] > 0.8:  # Default: 0.7
 For issues or questions:
 1. Check the troubleshooting section above
 2. Review generated log files in `.claude/`
-3. Open an issue on [GitHub](https://github.com/webdevtodayjason/context-forge)
+3. Open an issue on [GitHub](https://github.com/webdevtodayjason/codex-context-forge)
 4. Join our community discussions
 
 ---
 
-*This documentation covers Context Forge v3.2.1 Dart integration features. For general Context Forge usage, see the main README.*
+*This documentation covers Codex Context Forge v3.2.1 Dart integration features. For general Codex Context Forge usage, see the main README.*

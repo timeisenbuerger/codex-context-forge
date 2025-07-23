@@ -14,7 +14,7 @@ import { version } from '../../package.json';
 const program = new Command();
 
 program
-  .name('context-forge')
+  .name('codex-context-forge')
   .description(
     'CLI tool that generates context engineering documentation for AI-powered development'
   )
