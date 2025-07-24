@@ -2,6 +2,7 @@ import { ProjectConfig } from '../types';
 import { getValidationCommands } from '../data/validationCommands';
 import { FrameworkDetector } from '../services/frameworkDetector';
 import { generateClaudeMd } from '../generators/claudeMd';
+import { ComposeVersionService } from '../services/composeVersionService';
 import fs from 'fs-extra';
 import path from 'path';
 
@@ -150,7 +151,7 @@ describe('Compose Multiplatform Support', () => {
       expect(claudeMd).toContain('🍎 **iOS**');
       expect(claudeMd).toContain('🖥️ **Desktop**');
       expect(claudeMd).toContain('🌐 **Web (JS)**');
-      expect(claudeMd).toContain('Compose Multiplatform **1.6.0**');
+      expect(claudeMd).toMatch(/Compose Multiplatform \*\*\d+\.\d+\.\d+.*\*\*/);
       expect(claudeMd).toContain('├── commonMain/kotlin/');
       expect(claudeMd).toContain('├── androidMain/');
       expect(claudeMd).toContain('├── iosMain/');
@@ -185,6 +186,38 @@ describe('Compose Multiplatform Support', () => {
         mockComposeMultiplatformConfig.projectType
       );
       expect(shouldHaveBackend).toBe(true);
+    });
+  });
+
+  describe('Dynamic Version Integration', () => {
+    it('should support dynamic version fetching', async () => {
+      const versionService = new ComposeVersionService();
+      const versions = await versionService.getVersions();
+
+      expect(versions.latest).toBeDefined();
+      expect(versions.latest.version).toMatch(/^\d+\.\d+\.\d+/);
+      expect(versions.latest.displayName).toContain('Latest Stable');
+      expect(versions.latest.isStable).toBe(true);
+
+      expect(versions.previous).toBeDefined();
+      expect(versions.previous.version).toMatch(/^\d+\.\d+\.\d+/);
+      expect(versions.previous.displayName).toContain('Previous Stable');
+    });
+
+    it('should handle version service failures gracefully', async () => {
+      // Mock network failure
+      const originalFetch = global.fetch;
+      global.fetch = jest.fn().mockRejectedValue(new Error('Network error'));
+
+      const versionService = new ComposeVersionService();
+      const versions = await versionService.getVersions();
+
+      // Should still return fallback versions
+      expect(versions.latest.version).toBeDefined();
+      expect(versions.previous.version).toBeDefined();
+
+      // Restore original fetch
+      global.fetch = originalFetch;
     });
   });
 });

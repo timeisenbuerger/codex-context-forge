@@ -287,7 +287,9 @@ export class ErrorRecoveryService {
     console.log(
       chalk.gray('• Documentation: https://github.com/webdevtodayjason/codex-context-forge#readme')
     );
-    console.log(chalk.gray('• Issues: https://github.com/webdevtodayjason/codex-context-forge/issues'));
+    console.log(
+      chalk.gray('• Issues: https://github.com/webdevtodayjason/codex-context-forge/issues')
+    );
     console.log(chalk.gray('• Discord: Contact for community support'));
 
     if (this.aiService.isAIEnabled()) {

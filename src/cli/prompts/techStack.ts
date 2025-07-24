@@ -1,5 +1,6 @@
 import inquirer from 'inquirer';
 import chalk from 'chalk';
+import { ComposeVersionService } from '../../services/composeVersionService.js';
 
 interface TechStackAnswers {
   frontend?: string;
@@ -78,16 +79,37 @@ export async function techStack(projectType: string): Promise<TechStackAnswers> 
 
       // Version selection for Compose Multiplatform
       console.log(chalk.cyan(`⚡ ${stepCounter++}. Compose Version`));
+
+      // Show loading indicator while fetching versions
+      const loadingInterval = setInterval(() => {
+        process.stdout.write('.');
+      }, 500);
+      process.stdout.write(chalk.gray('Fetching latest versions...'));
+
+      const versionService = new ComposeVersionService();
+      const versions = await versionService.getVersions();
+
+      clearInterval(loadingInterval);
+      process.stdout.write('\r' + ' '.repeat(50) + '\r'); // Clear loading line
+
+      const choices = [
+        { name: versions.latest.displayName, value: versions.latest.version },
+        { name: versions.previous.displayName, value: versions.previous.version },
+      ];
+
+      if (versions.development) {
+        choices.push({
+          name: versions.development.displayName,
+          value: versions.development.version,
+        });
+      }
+
       const versionAnswer = await inquirer.prompt([
         {
           type: 'list',
           name: 'composeVersion',
           message: 'Select Compose Multiplatform version:',
-          choices: [
-            { name: '1.6.0 (Latest Stable)', value: '1.6.0' },
-            { name: '1.5.12 (Previous Stable)', value: '1.5.12' },
-            { name: '1.7.0-dev (Development)', value: '1.7.0-dev' },
-          ],
+          choices,
         },
       ]);
       answers.composeVersion = versionAnswer.composeVersion;
